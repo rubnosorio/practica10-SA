@@ -7,7 +7,7 @@
 
 ### Conexion a bd y extraccion de datos
 ```sh 
-
+ 
     config = {
         'user': 'root',
         'password': 'root',
