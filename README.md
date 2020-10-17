@@ -1,6 +1,6 @@
 # Tarea No.10 del Laboratorio de Software Avanzado
 
-## Ruben Osorio----- 201407303 -
+## Ruben Osorio------ 201407303 -
 
 
 ## Aplicacion flask 
