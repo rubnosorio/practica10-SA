@@ -115,7 +115,17 @@ docker-compose up -d
 ```
 Nota:-d sirve para ejecute todo desde segundo plano sin necesidad de tener una terminal abierta.
 
+## Comandos utilizados en Jenkins
+
+Simplemente ubicando en la carpeta raiz de proyecto procedemos a abrir un terminal y escribir el comando.
+
+```sh
+cd $HOME/practica10-SA
+sudo git pull origin main
+sudo docker-compose up -d
+```
+
 
 ## Video Demostracion de la aplicación
 
-[![Ver en youtube]](https://youtu.be/xLrdV4S_UGs) 
+[![Ver en youtube]](https://youtu.be/q2SnA8hkQxc) 
