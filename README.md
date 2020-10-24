@@ -124,7 +124,19 @@ cd $HOME/practica10-SA
 sudo git pull origin main
 sudo docker-compose up -d
 ```
-
+## Proxy inverso
+Archivo configuracion proxy inverso para redireccionar el trafico del puerto 5000 al puerto 80
+```sh
+events {}
+http {
+    server {
+        listen 80;
+        location / {
+            proxy_pass http://web:5000;
+        }
+    }
+}
+```
 
 ## Video Demostracion de la aplicación
 

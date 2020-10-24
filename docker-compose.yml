@@ -1,6 +1,7 @@
 version: "2"
 services:
-  app:
+  web:
+    container_name: servicioWeb
     build: .
     links:
       - db
@@ -15,3 +16,11 @@ services:
     volumes:
       - ./db:/docker-entrypoint-initdb.d/:ro
       - ./db/my_data:/var/lib/mysql
+  proxy:
+    container_name: proxy
+    image: nginx:stable-alpine
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+
